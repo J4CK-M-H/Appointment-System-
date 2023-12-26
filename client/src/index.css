@@ -1,0 +1,42 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+body {
+  background-color: #F6F1E9;
+}
+
+.p-inputtext {
+  outline: none;
+  box-shadow: none;
+}
+
+.p-inputtext:hover {
+  @apply border-slate-300
+}
+
+.p-inputtext:focus {
+  @apply border-slate-300
+}
+.p-card-body {
+  padding: 0 1.25rem !important;
+}
+
+.p-divider.p-divider-horizontal {
+  padding: 0;
+  margin: 0;
+}
+
+.p-sidebar-content {
+  padding: 0;
+}
